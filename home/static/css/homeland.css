@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@500&family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fjalla+One&family=Yatra+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+    overflow-x: hidden !important;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.body {
+    display: grid;
+}
+
+div.header {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+div.notif {
+    background-color: rgb(209, 0, 0);
+    width: 100%;
+    height: 6vh;
+    padding: 12px 0px 0px 0px;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 0.1% auto;
+    height: 12vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 9px 392px;
+    overflow: hidden;
+    width: 100%;
+    align-items: center;
+}
+
+li.nav-item {
+    display: inline-block;
+}
+
+nav ul li a.nav-link {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a.nav-link:hover {
+    color: rgb(32, 201, 32);
+}
+
+div.position-1 h1 {
+    font-family: 'Yatra One', cursive;
+    font-size: 130px;
+    font-weight: lighter;
+    padding: -30px 0px;
+}
+
+div.position-1 h1:hover {
+    color: rgb(192, 7, 53);
+    font-size: 120px;
+}
+
+div.position-1 {
+    background-image: url("https://raw.githubusercontent.com/Sakshi-Oslo/Sakshi-Oslo.github.io/master/india.png");
+    background-image: url("https://img.freepik.com/free-vector/panorama-view-india-with-taj-mahal-skyline-with-world-famous-landmarks_41327-607.jpg?w=996");
+    background-image: url("https://static.vecteezy.com/system/resources/previews/000/128/912/large_2x/india-gate-vector-illustration.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+div.position-1,
+div.position-2,
+div.position-3 {
+    overflow-y: hidden;
+    background-color: rgb(255 255 255);
+}
+
+.position-3 img {
+    position: relative;
+    top: 32px;
+    right: 122px;
+}
+
+.position-2 img {
+    position: relative;
+    top: 15px;
+    right: 43px;
+}
+
+div.try-1 {
+    height: 50vh;
+    background-image: url("https://images.pexels.com/photos/265642/pexels-photo-265642.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: lighten;
+    background-attachment: fixed;
+}
+
+div#about-us {
+    background-image: url("https://images.pexels.com/photos/3183174/pexels-photo-3183174.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("https://images.pexels.com/photos/97050/pexels-photo-97050.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    /*background-image: url("https://images.pexels.com/photos/1809342/pexels-photo-1809342.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.grid-contain {
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 40% 32% auto;
+    grid-column-gap: 8px;
+    grid-template-rows: auto;
+    align-content: center;
+    /*background-image: url("https://besthqwallpapers.com/Temp/6-3-2022/crumpled-paper-texture-white-crumpled-paper-background-paper-texture-white-paper-crumpled-paper-besthqwallpapers.com-1024x768.jpg");
+    background-image: url("https://storage.googleapis.com/webdesignledger.pub.network/LaT/edd/2016/02/ink-and-tea-stained-paper-texture-7-780x1100.jpg");*/
+    background-color: white;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.grid-it {
+    padding: 8px;
+}
+
+p.para {
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#grid1 {
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+}
+
+#grid2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+}
+
+#heading2 {
+    font-size: 30px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+#heading1 {
+    font-weight: lighter;
+    transition-duration: 0ms;
+}
+
+#heading-1:hover {
+    background-color: yellow;
+    margin-right: 140px;
+    color: red;
+    font-weight: bolder;
+}
+
+a#arogya-link {
+    font-weight: bold;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+a#login {
+    text-decoration: none;
+    transition-duration: 0.3s;
+}
+
+img#map {
+    width: 300px;
+    height: 200px;
+}
+
+a#login:hover {
+    padding-left: 5px;
+    font-size: larger;
+    color: black;
+}
+
+.container {
+    /*background-image: url("https://s.w-x.co/WeatherImages_Web/WeatherImage_PartlyCloudy-day_2.jpg?crop=16:9&width=800&format=pjpg&auto=webp&quality=70)%22");
+    background-image: url("https://media1.giphy.com/media/sOUgQvvq0UAaI8vWgQ/giphy.gif?cid=790b76110ddecf5f1a45a15872cfa48daaeae6bb11d41dcf&rid=giphy.gif&ct=g");
+    background-image: url("https://media2.giphy.com/media/1dHqWiDhGa57fH0E72/giphy.gif?cid=790b7611ca19258526cccc220e8ee6ce88fa6db548a8d483&rid=giphy.gif&ct=g");
+    background-image: url("https://media4.giphy.com/media/k3CeSrt9IZ6aorWCy1/giphy.gif?cid=790b76119d4be4457379e3ff238dfa3ad7683d181da76d74&rid=giphy.gif&ct=g");
+    background-image: url("https://media0.giphy.com/media/26FffL1HM1P4affws/giphy.gif?cid=790b76111fd833a29e71eeabe0c166747a43464e76a6cbc4&rid=giphy.gif&ct=g");
+    background-image: url("https://media3.giphy.com/media/3o6fIPPWcccab3N64E/giphy.gif?cid=790b7611df4da90273fa26af368867afc6ec869b090576ee&rid=giphy.gif&ct=g");
+    background-image: url("https://media0.giphy.com/media/26FPGJrU6MQHfwhtC/giphy.gif?cid=790b76119efc3b9a038d3752f816b0f3f7b1be393a22530c&rid=giphy.gif&ct=g");*/
+    background-image: url("https://media1.giphy.com/media/3og0IS3PKTeU9B34MU/giphy.gif?cid=790b7611c0796044be91b1f59d9e195843a7ca61c15c5c9a&rid=giphy.gif&ct=g");
+    padding: 10px;
+    display: grid;
+    align-content: center;
+    height: 90vh;
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    /*background-position: center;*/
+}
+
+.grid4 {
+    display: grid;
+    align-content: center;
+    grid-template-columns: 50% auto auto;
+    grid-template-rows: auto;
+    grid-column-gap: 8px;
+    font-family: 'Playfair Display', serif;
+}
+
+.text-dark {
+    color: black!important;
+    font-family: 'Lora', serif;
+    font-weight: lighter;
+}
+
+input[type='text'] {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.863);
+    opacity: 0.85;
+    padding: 0px;
+    padding-right: 4px;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 5px;
+    border-width: 1px;
+    height: 50px;
+    border-color: rgb(122, 11, 145);
+    outline: none!important;
+    font-family: 'Lora', serif;
+    font-size: larger;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.form-control:focus {
+    outline: none!important;
+}
+
+.input-group {
+    padding: 0px 5px;
+    text-align: center;
+}
+
+input#cities:hover {
+    font-size: 25px;
+}
+
+button {
+    background-color: #008CBA;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    padding: 14px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 8px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+}
+
+h1.text-dark {
+    font-size: 60px;
+    font-weight: 35px;
+    font-family: 'Secular One', sans-serif;
+}
+
+.input-group h3 {
+    overflow: hidden;
+}
+
+img#forecast {
+    width: 252px;
+    height: 229px;
+}
+
+.body div#about-us {
+    display: grid;
+    height: 90vh;
+    background-color: black;
+}
+
+.body div#features {
+    display: grid;
+    height: 100vh;
+    background-color: white;
+    color: black;
+}
+
+.body div#contact-us {
+    display: grid;
+    height: 45vh;
+    background-color: black;
+    color: rgb(255, 115, 0);
+}
+
+ul.social-handles li {
+    float: left;
+    list-style-type: none;
+    padding: 0px 165px;
+}

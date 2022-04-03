@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Compressed CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <!-- Compressed JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.4/dist/js/foundation.min.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="">
+    <style>
+        body {
+            margin: 0;
+            background-color: #7ee9e759;
+            overflow-x: hidden;
+            padding: 10px;
+        }
+        
+        select {
+            width: 30vw;
+            padding: 1vw;
+            text-align-last: center;
+            border: 3px solid black;
+            background-color: #a9bd2bb0;
+        }
+        
+        button {
+            margin-left: 105px;
+            width: 12vw;
+            padding: 1vw;
+            border-radius: 10px;
+        }
+        
+        button:hover {
+            padding: 1.1vw;
+            background-color: #3292ffde;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="nav" id="on-top" style="display:grid;grid-template-columns:20% 20% auto;padding-top:20px;column-gap:130px">
+        <h2>
+            {% if request.user.is_authenticated %}
+            <p id="top">Hello {{request.user}}!</p>
+            {% endif %}
+        </h2>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <a href="http://127.0.0.1:8000/"><button style="size:20px;margin-top:30px"> LOGOUT </button></a>
+
+        <div style="align-items:center">
+            <form class="form-signin" method="GET">
+
+                <label for="state"></label>
+                <select id="state" name="state-name">
+  <option value="uttar-pradesh">Uttar Pradesh</option>
+  <option value="delhi-ncr">Delhi NCR</option>
+  <option value="punjab">Punjab</option>
+  <option value="bihar">Bihar</option>
+  <option value="haryana">Haryana</option>
+  <option value="uttarakhand">Uttarakhand</option>
+  <option value="chhattisgarh">Chhattisgarh</option>
+  <option value="jharkhand">Jharkhand</option>
+  <option value="Andhra-Pradesh">Andhra Pradesh</option>
+  <option value="madhya-pradesh">Madhya Pradesh</option>
+  <option value="himachal-pradesh">Himachal Pradesh</option>
+  <option value="jammu-and-kashmir">Jammu Kashmir</option>
+  <option value="west-bengal">West Bengal</option>
+  <option value="odisha">Odisha</option>
+  <option value="rajasthan">Rajasthan</option>
+  <option value="Karnataka">Karnataka</option>
+  <option value="Kerala">Kerala</option>
+  <option value="Tamil-Nadu">Tamil Nadu</option>
+  <option value="Telangana">Telangana</option>
+</select>
+
+                <!-- <p><input type="text" id="states" name="state-name" class="form-control-text-center" placeholder="Enter State Name" required></p>-->
+                <br>
+
+                <p><button class="btn-btn-outline-secondary" type="submit">SEARCH</button></p>
+
+        </div>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+    <center>
+        <h1 style="background-color:#ff820cad">NEWSROOM</h1>
+    </center>
+    <br>
+    <hr>
+    <br>
+    <div class="jumbotron">
+        <h1 style="text-transform:uppercase;text-decoration:underline">{{state}}</h1>
+        <h2><a href="" class="btn btn-danger">Refresh News</a></h2>
+
+    </div>
+
+    <div class="container">
+        <div class="col-6" style="display:grid; grid-template-columns:25% 75%;column-gap:25px">
+            <div>
+                <ul>
+                    {% for ima in Image %}
+                    <li style="list-style-type:none;text-decoration:none"><img src="{{ima}}" height=240px width=300px/></li>
+                    <hr> {% endfor %}
+                    <br>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+            <div style="align-content:center">
+                {% for news in News %}
+                <h3 style="height:223.5px"> =>&nbsp {{news}} </h3>
+                <hr> {% endfor %}
+                <br>
+                <br>
+            </div>
+        </div>
+
+        </form>
+    </div>
+    <center>
+        <h3><a href="#on-top">Back to Top</a></h3>
+    </center>
+    <br>
+    <br>
+    <hr>
+    <h1>Coronavirus Updates</h1>
+    <pre>
+       <h2>ACTIVE CASES = {{ACases}}</h2>
+       <h2>DISCHARGED CASES = {{DCases}}</h2>
+       <h2>DEATH CASES = {{DeCases}}</h2>
+       </pre>
+    <h4><i><a href= "https://www.mohfw.gov.in/">from Ministry of Health and Family Welfare</a></i></h4>
+    <br>
+    <br>
+    <hr>
+    <h1>Weather Updates</h1>
+
+    <script src="" async defer></script>
+    <!--  <script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+</body>
+
+</html>
